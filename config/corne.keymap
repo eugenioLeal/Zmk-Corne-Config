@@ -85,6 +85,7 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
                         bindings = <&kp>, <&kp>;
                 };
         };
+        /*
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 label = "CONDITIONAL_LAYERS";
@@ -93,6 +94,7 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
                         then-layer = <&bluetooth_layer>;
                 };
         };
+        */
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
@@ -108,6 +110,7 @@ XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp 
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
+                /*
                 symbol_layer {
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -172,6 +175,7 @@ XX      XX            XX            XX            XX            XX              
                                      XX            XX            XX        &bt BT_CLR            XX            XX      
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
+                */
                 };
         };
 };
