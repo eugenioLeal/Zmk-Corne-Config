@@ -33,12 +33,12 @@ ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
 #define NAV 3
 #define MEDIA 4
 
+
 // Define custom keys shortform
 #define XX &none
 #define MEH LG(LA(LCTRL))
 #define HYP LS(LG(LA(LCTRL)))
 #define REM LA(BSPC)
-#define SPC SPACE
 #define KCUT &kp LG(X)
 #define KCOPY &kp LG(C)
 #define KPASTE &kp LG(V)
@@ -122,7 +122,7 @@ XX  &hml LCTRL A  &hml LALT O   &hml LGUI E   &hml LSHFT U    &kp I         &kp 
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp B        &kp M         &kp W         &kp V         &kp Z       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                &mt MEH ESC   &lt NUM TAB  &lt SYM REM     &lt NAV SPC   &kp RET      &mt MEH BSPC
+                                &mt MEH ESC   &lt NUM TAB  &lt SYM REM     &lt NAV SPACE   &kp RET      &mt MEH BSPC
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -151,7 +151,7 @@ XX &hml LCTRL F11  &hml LALT F4   &hml LGUI F5  &hml LSHFT F6    XX       &kpare
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX  &kp F10       &kp F1        &kp F2        &kp F3         XX             &kthan           K1            K2            K3           RET      XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX           XX          XX             &kp SPC          K0         &kp DOT  
+                                    XX           XX          XX             &kp SPACE          K0         &kp DOT  
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
