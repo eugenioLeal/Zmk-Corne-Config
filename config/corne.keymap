@@ -102,14 +102,6 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
                         hold-trigger-key-positions = <KEYS_L THUMBS>;    // <---[[left-hand keys]]
                 };
         };
-        conditional_layers {
-                compatible = "zmk,conditional-layers";
-                label = "CONDITIONAL_LAYERS";
-                tri_layer {
-                        if-layers = <&symbol_layer &number_layer &navigation_layer>;
-                        then-layer = <&bluetooth_layer>;
-                };
-        };
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
