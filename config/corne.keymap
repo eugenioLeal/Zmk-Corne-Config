@@ -85,7 +85,7 @@ ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
 
 &lt {
         tapping-term-ms = <200>;
-}
+};
 
 / {
         behaviors {
