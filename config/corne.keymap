@@ -36,9 +36,9 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
 #define MEH LG(LA(LCTRL))
 #define HYP LS(LG(LA(LCTRL)))
 #define REM LA(BSPC)
-#define CUT &kp LG(X)
-#define COPY &kp LG(C)
-#define PASTE &kp LG(V)
+#define KCUT &kp LG(X)
+#define KCOPY &kp LG(C)
+#define KPASTE &kp LG(V)
 #define MUL &kp KP_MULTIPLY
 #define SUB &kp KP_SUBTRACT
 #define ADD &kp KP_PLUS
@@ -71,7 +71,6 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
 #define SEARCH &kp C_AC_SEARCH
 #define EXPOSE &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 #define APPS &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
-#define GLOBE &kp GLOBE
 
 
 
@@ -117,7 +116,7 @@ XX  &kp GRAVE       XX              XX           &u_dia         XX         &kp C
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX &hm LCTRL EXCL &hm LALT AT  &hm LGUI HASH &hm LSHFT DLLR  &kp PRCNT     &kp AMPS    &hm RSHFT STAR &hm RGUI LPAR &hm RALT RPAR &hm LCTRL &BSLH     XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            CUT         COPY          PASTE         XX          XX            &kp MINUS    &kp EQUAL      &ntilde        XX        XX
+XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL      &ntilde        XX        XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
                                     XX            XX            XX             &acute     &kp CAPS             
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
@@ -143,7 +142,7 @@ XX      XX            XX            XX            XX            XX             X
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX      XX            XX            XX            XX            XX             XX           &kp LEFT    &kp DOWN     &kp RIGHT    &kp PG_UP     XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            XX            XX            XX            XX              XX            CUT         COPY          PASTE      &kp PG_DOWN      XX
+XX      XX            XX            XX            XX            XX              XX            KCUT         KCOPY          KPASTE      &kp PG_DOWN      XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼───────────┴─────────────╯
                                     XX            XX            XX            XX            XX            XX      
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
