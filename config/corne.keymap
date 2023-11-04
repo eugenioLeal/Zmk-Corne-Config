@@ -43,7 +43,6 @@ ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
 #define SUB &kp KP_SUBTRACT
 #define ADD &kp KP_PLUS
 #define DIV &kp KP_DIVIDE
-#define EQL &kp EQUAL
 #define K1 &kp KP_N1
 #define K2 &kp KP_N2
 #define K3 &kp KP_N3
