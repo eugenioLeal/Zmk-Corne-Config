@@ -51,8 +51,11 @@ ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
 #define K4 &kp KP_N4
 #define K5 &kp KP_N5
 #define K6 &kp KP_N6
+#define C6 KP_N6
 #define K7 &kp KP_N7
+#define C7 KP_N7
 #define K8 &kp KP_N8
+#define C8 KP_N8
 #define K9 &kp KP_N9
 #define K0 &kp KP_N0
 #define VOL_UP &kp C_VOL_UP
@@ -120,7 +123,7 @@ XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp 
                         >;
                 };
                 symbol_layer {
-                        label = "SYM";
+                        label = "SYMBOL L";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX  &kp GRAVE       XX              XX           &u_dia         XX         &kp CARET         XX        &kp LBKT       &kp RBKT        &ques    XX
@@ -129,17 +132,17 @@ XX &hml LCTRL &excl &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp A
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL      &ntilde       &nslash       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX            XX            XX             &acute     &kp CAPS             
+                                    XX            XX            XX             &acute     &kp CAPS        XX     
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
                 number_layer {
-                        label = "NUM";
+                        label = "NUMBER L";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX  &kp F12       &kp F7        &kp F8        &kp F9         XX             &kbrak           K7            &k8            &k9         &ksub    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL F11  &hml LALT F4   &hml LGUI F5  &hml LSHFT F6    XX     &kparen &hmr RSHFT KP_N4 &hmr RGUI KP_N5 &hmr RALT KP_N6 &hmr LCTRL KP_PLUS XX
+XX &hml LCTRL F11  &hml LALT F4   &hml LGUI F5  &hml LSHFT F6    XX       &kparen    &hmr RSHFT C4 &hmr RGUI C5 &hmr RALT C6 &hmr LCTRL KP_PLUS XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX  &kp F10       &kp F1        &kp F2        &kp F3         XX             &kthan           K1            K2            K3           RET      XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
