@@ -38,6 +38,7 @@ ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
 #define MEH LG(LA(LCTRL))
 #define HYP LS(LG(LA(LCTRL)))
 #define REM LA(BSPC)
+#define SPC SPACE
 #define KCUT &kp LG(X)
 #define KCOPY &kp LG(C)
 #define KPASTE &kp LG(V)
