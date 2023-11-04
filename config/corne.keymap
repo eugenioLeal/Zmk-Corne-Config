@@ -93,21 +93,25 @@ ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
                         compatible = "zmk,behavior-hold-tap";
                         label = "LEFT_POSITIONAL_HOLD_TAP";
                         #binding-cells = <2>;
-                        flavor = "tap-unless-interrupted";
-                        tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-                        quick-tap-ms = <200>;
+                        flavor = "balanced";
+                        tapping-term-ms = <280>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+                        require-prior-idle-ms = <180>;
+                        quick-tap-ms = <175>;
                         bindings = <&kp>, <&kp>;
                         hold-trigger-key-positions = <KEYS_R THUMBS>;    // <---[[right-hand keys]]
+                        hold-trigger-on-release;
                 };
                 hmr: right_hand_positional_hold_tap {
                         compatible = "zmk,behavior-hold-tap";
                         label = "RIGHT_POSITIONAL_HOLD_TAP";
                         #binding-cells = <2>;
-                        flavor = "tap-unless-interrupted";
-                        tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-                        quick-tap-ms = <200>;
+                        flavor = "balanced";
+                        tapping-term-ms = <280>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+                        require-prior-idle-ms = <180>;
+                        quick-tap-ms = <175>;
                         bindings = <&kp>, <&kp>;
                         hold-trigger-key-positions = <KEYS_L THUMBS>;    // <---[[left-hand keys]]
+                        hold-trigger-on-release;
                 };
         };
         keymap {
