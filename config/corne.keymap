@@ -23,9 +23,6 @@
 #define MEH LG(LA(LCTRL))
 #define HYP LS(LG(LA(LCTRL)))
 #define REM LA(BSPC)
-#define KCUT &kp LG(X)
-#define KCOPY &kp LG(C)
-#define KPASTE &kp LG(V)
 #define MUL &kp KP_MULTIPLY
 #define SUB &kp KP_SUBTRACT
 #define ADD &kp KP_PLUS
@@ -161,7 +158,7 @@ XX      XX            XX            XX            XX            XX             X
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX      XX            XX            XX            XX            XX             XX          &kp LEFT     &kp DOWN     &kp RIGHT     &kp PG_UP  XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            XX            XX            XX            XX              XX         KCUT         KCOPY          KPASTE     &kp PG_DOWN XX
+XX      XX            XX            XX            XX            XX              XX         XX            XX             XX     &kp PG_DOWN XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     XX            XX            XX            XX            XX            XX      
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
