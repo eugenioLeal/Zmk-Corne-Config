@@ -16,7 +16,7 @@
 #define NUM 2
 #define NAV 3
 #define MEDIA 4
-#define BT 5
+#define BLUETOOTH 5
 
 
 // Define custom keys shortform
@@ -103,8 +103,8 @@
                         compatible = "zmk,conditional-layers";
                         label = "CONDITIONAL_LAYERS";
                         tri_layer {
-                                if-layers = <SYM NUM>;
-                                then-layer = <BL>;
+                                if-layers = <1 2>;
+                                then-layer = <5>;
                         };
                 };
         };
