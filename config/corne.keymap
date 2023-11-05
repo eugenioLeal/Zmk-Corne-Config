@@ -16,6 +16,7 @@
 #define NUM 2
 #define NAV 3
 #define MEDIA 4
+#define BT 5
 
 
 // Define custom keys shortform
@@ -102,8 +103,8 @@
                         compatible = "zmk,conditional-layers";
                         label = "CONDITIONAL_LAYERS";
                         tri_layer {
-                                if-layers = <&symbol_layer &number_layer &navigation_layer>;
-                                then-layer = <&bluetooth_layer>;
+                                if-layers = <SYM NUM>;
+                                then-layer = <BL>;
                         };
                 };
         };
@@ -124,7 +125,7 @@ XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp 
                         >;
                 };
                 symbol_layer {
-                        label = "SYMBOL L";
+                        label = "SYMBOL";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX  &kp GRAVE       XX              XX            XX             XX         &kp CARET         XX        &kp LBKT       &kp RBKT    &kp FSLH    XX
@@ -138,7 +139,7 @@ XX      XX            KCUT         KCOPY          KPASTE         XX          XX 
                         >;
                 };
                 number_layer {
-                        label = "NUMBER L";
+                        label = "NUMBER";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX  &kp F12       &kp F7        &kp F8        &kp F9         XX             KEQ           K7            K8            K9         SUB    XX
@@ -180,6 +181,7 @@ XX      XX            XX            XX            XX            XX              
                         >;
                 };
                 bluetooth_layer {
+                        label = "BT";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX       XX            XX            XX            XX            XX              XX            XX      &bt BT_NXT     &bt BT_PRV       XX      XX   
