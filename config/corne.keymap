@@ -31,6 +31,7 @@
 #define ADD &kp KP_PLUS
 #define DIV &kp KP_DIVIDE
 #define KEQ &kp KP_EQUAL
+#define K0 &kp KP_N0
 #define K1 &kp KP_N1
 #define K2 &kp KP_N2
 #define K3 &kp KP_N3
