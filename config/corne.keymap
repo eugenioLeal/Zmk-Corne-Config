@@ -30,6 +30,7 @@
 #define SUB &kp KP_SUBTRACT
 #define ADD &kp KP_PLUS
 #define DIV &kp KP_DIVIDE
+#define KEQ &kp KP_EQUAL
 #define K1 &kp KP_N1
 #define K2 &kp KP_N2
 #define K3 &kp KP_N3
@@ -128,21 +129,21 @@ XX      XX            KCUT         KCOPY          KPASTE         XX          XX 
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
-                /*
                 number_layer {
                         label = "NUMBER L";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX  &kp F12       &kp F7        &kp F8        &kp F9         XX             &kbrak           K7            &k8            &k9         &ksub    XX
+XX  &kp F12       &kp F7        &kp F8        &kp F9         XX             KEQ           K7            K8            K9         SUB    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL F11  &hml LALT F4   &hml LGUI F5  &hml LSHFT F6    XX       &kparen    &hmr RSHFT KP_N4 &hmr RGUI KP_N5 &hmr RALT KP_N6 &hmr LCTRL KP_PLUS XX
+XX &hml LCTRL F11  &hml LALT F4 &hml LGUI F5  &hml LSHFT F6  &kp RPAR      MUL   &hmr RSHFT KP_N4 &hmr RGUI KP_N5 &hmr RALT KP_N6 &hmr LCTRL KP_PLUS XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX  &kp F10       &kp F1        &kp F2        &kp F3         XX             &kthan           K1            K2            K3           RET      XX
+XX  &kp F10       &kp F1        &kp F2        &kp F3         &kp LPAR         DIV           K1            K2            K3           RET      XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
                                     XX           XX          XX             &kp SPACE          K0         &kp DOT  
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
+                /*
                 navigation_layer {
                         label = "NAV";
                         bindings = <
