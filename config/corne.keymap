@@ -98,7 +98,6 @@
                         hold-trigger-key-positions = <KEYS_L THUMBS>;    // <---[[left-hand keys]]
                         hold-trigger-on-release;
                 };
-                /*
                 conditional_layers {
                         compatible = "zmk,conditional-layers";
                         label = "CONDITIONAL_LAYERS";
@@ -107,7 +106,6 @@
                                 then-layer = <&bluetooth_layer>;
                         };
                 };
-                */
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -181,7 +179,6 @@ XX      XX            XX            XX            XX            XX              
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
-                /*
                 bluetooth_layer {
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -195,6 +192,5 @@ XX      XX            XX            XX            XX            XX              
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
-                */
         };
 };
