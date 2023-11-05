@@ -24,11 +24,11 @@ ZMK_UNICODE_PAIR(kbrak,    N0, N0, 5, B,    N0, N0, 5, D)  // [/]
 ZMK_UNICODE_PAIR(excl,     N0, N0, 2, 1,    N0, N0, A, 1)  // !/¡
 ZMK_UNICODE_PAIR(ques,     N0, N0, 3, F,    N0, N0, B, F)  // ?/¿
 ZMK_UNICODE_PAIR(nslash,   N0, N0, 2, F,    N0, N0, 5, C)  // \/
-*/
 ZMK_UNICODE_PAIR(ques,    N0, N0, 2, D,    N0, N0, 3, D)   // ü/Ü
 ZMK_UNICODE_PAIR(nslash,  N0, N0, 2, 6,    N0, N0, 2, D)   // ´/¨
 #define UDIA &kp LA(U)
 #define NTILDE &kp LA(N)
+*/
 #define ACUTESYM &kp LA(E)
 
 // Define my layers
@@ -139,11 +139,11 @@ XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp 
                         label = "SYMBOL L";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX  &kp GRAVE       XX              XX          UDIA         XX         &kp CARET         XX        &kp LBKT       &kp RBKT       &kp &ques    XX
+XX  &kp GRAVE       XX              XX          XX         XX         &kp CARET         XX        &kp LBKT       &kp RBKT             &kp FSLSH    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL &excl &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp AMPS  &hmr RSHFT STAR &hmr RGUI LPAR &hmr RALT RPAR &hmr LCTRL PIPE     XX
+XX &hml LCTRL &excl &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp AMPS  &hmr RSHFT STAR &hmr RGUI LPAR &hmr RALT RPAR &hmr LCTRL BSLSH     XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL      NTILDE       &kp &nslash       XX
+XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL        XX           XX       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
                                     XX            XX            XX           ACUTESYM     &kp CAPS        XX     
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
