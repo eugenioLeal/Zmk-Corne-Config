@@ -31,7 +31,7 @@
 #define ADD &kp KP_PLUS
 #define DIV &kp KP_DIVIDE
 #define KEQ &kp KP_EQUAL
-#define K0 &kp KP_N0
+#define KP0 &kp KP_N0
 #define K1 &kp KP_N1
 #define K2 &kp KP_N2
 #define K3 &kp KP_N3
@@ -44,7 +44,6 @@
 #define K8 &kp KP_N8
 #define C8 KP_N8
 #define K9 &kp KP_N9
-#define K0 &kp KP_N0
 #define VOL_UP &kp C_VOL_UP
 #define VOL_DOWN &kp C_VOL_DOWN
 #define BR_UP &kp C_BRIGHTNESS_INC
@@ -140,7 +139,7 @@ XX &hml LCTRL F11  &hml LALT F4 &hml LGUI F5  &hml LSHFT F6  &kp RPAR      MUL  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX  &kp F10       &kp F1        &kp F2        &kp F3         &kp LPAR         DIV           K1            K2            K3           RET      XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX           XX          XX             &kp SPACE          K0         &kp DOT  
+                                    XX           XX          XX             &kp SPACE          KP0         &kp DOT  
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
