@@ -28,8 +28,8 @@ ZMK_UNICODE_PAIR(ques,    N0, N0, 2, D,    N0, N0, 3, D)   // ü/Ü
 ZMK_UNICODE_PAIR(nslash,  N0, N0, 2, 6,    N0, N0, 2, D)   // ´/¨
 #define UDIA &kp LA(U)
 #define NTILDE &kp LA(N)
-*/
 #define ACUTESYM &kp LA(E)
+*/
 
 // Define my layers
 #define DEFAULT 0
@@ -145,7 +145,7 @@ XX &hml LCTRL &excl &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp A
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL        XX           XX       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX            XX            XX           ACUTESYM     &kp CAPS        XX     
+                                    XX            XX            XX           XX     &kp CAPS        XX     
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
