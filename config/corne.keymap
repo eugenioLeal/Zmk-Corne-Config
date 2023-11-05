@@ -45,10 +45,10 @@
 #define C8 KP_N8
 #define K9 &kp KP_N9
 #define VOL_UP &kp C_VOL_UP
-#define VOL_DOWN &kp C_VOL_DOWN
+#define VOL_DOWN &kp C_VOL_DN
 #define BR_UP &kp C_BRIGHTNESS_INC
 #define BR_DOWN &kp C_BRIGHTNESS_DEC
-#define MUTE &kp C_MUTE
+#define MUTE &kp K_MUTE
 #define PLAY &kp C_PLAY
 #define PAUSE &kp C_PAUSE
 #define PREV &kp C_PREV
