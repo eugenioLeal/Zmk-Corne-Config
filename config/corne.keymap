@@ -27,6 +27,8 @@
 #define KCUT &kp LG(X)
 #define KCOPY &kp LG(C)
 #define KPASTE &kp LG(V)
+#define KUNDO &kp LG(Z)
+#define KREDO &kp LG(LS(Z))
 #define MUL &kp KP_MULTIPLY
 #define SUB &kp KP_SUBTRACT
 #define ADD &kp KP_PLUS
@@ -120,7 +122,7 @@ XX  &kp SEMI      &kp Q         &kp J         &kp K           &kp X         &kp 
                         label = "SYMBOL";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX  &kp GRAVE       XX              XX            XX             XX         &kp CARET         XX        &kp LBKT       &kp RBKT    &kp FSLH    XX
+XX  &kp GRAVE       KUNDO          KREDO         XX             XX         &kp CARET         XX        &kp LBKT       &kp RBKT    &kp FSLH    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX &hml LCTRL EXCL &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp AMPS  &hmr RSHFT STAR &hmr RGUI LPAR &hmr RALT RPAR &hmr LCTRL BSLH     XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
