@@ -84,8 +84,8 @@
         combos {
                 compatible = "zmk,combos";
                 combo_capslock {
-                        timeout-ms = <30>;
-                        key-positions = <LT5 LT5>;
+                        timeout-ms = <50>;
+                        key-positions = <LT4 LT4>;
                         bindings = <&kp CAPS>;
                 };
         };
