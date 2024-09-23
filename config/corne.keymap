@@ -65,6 +65,8 @@
 #define SEARCH &kp C_AC_SEARCH
 #define EXPOSE &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS
 #define APPS &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
+#define PERC &kp PRCNT
+#define AMPER &kp AMPS
 
 /* Homerow mods */
 
@@ -124,7 +126,7 @@
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 XX  &kp SQT       &kp COMMA     &kp DOT       &kp P           &kp Y         &kp F        &kp G         &kp C         &kp R         &kp L       XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL A  &hml LALT O   &hml LGUI E   &hml LSHFT U    &kp I         &kp D       &hmr RSHFT H   &hmr RGUI T   &hmr RALT N    &hmr LCTRL S XX
+XX &hml LCTRL A  &hml LALT O   &hml LGUI E   &hml LSHFT U     &kp I         &kp D       &hmr RSHFT H  &hmr RGUI T   &hmr RALT N   &hmr LCTRL S XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX  &lt FUN SEMI  &kp Q         &kp J         &kp K           &kp X         &kp B        &kp M         &kp W         &kp V         &kp Z       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
@@ -136,9 +138,9 @@ XX  &lt FUN SEMI  &kp Q         &kp J         &kp K           &kp X         &kp 
                         label = "SYMBOL";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX  &kp GRAVE       KUNDO          KREDO         XX             XX         &kp CARET         XX        &kp LBKT       &kp RBKT    &kp FSLH    XX
+XX  &kp GRAVE       KUNDO          KREDO         XX             XX         &kp CARET         XX        &kp LBKT       &kp RBKT    &kp FSLH     XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL EXCL &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR &kp PRCNT  &kp AMPS  &hmr RSHFT STAR &hmr RGUI LPAR &hmr RALT RPAR &hmr LCTRL BSLH     XX
+XX &hml LCTRL EXCL &hml LALT AT &hml LGUI HASH &hml LSHFT DLLR  PERC       AMPER &hmr RSHFT STAR &hmr RGUI LPAR &hmr RALT RPAR &hmr LCTRL BSLH XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 XX      XX            KCUT         KCOPY          KPASTE         XX          XX            &kp MINUS    &kp EQUAL        XX           XX       XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
@@ -150,13 +152,13 @@ XX      XX            KCUT         KCOPY          KPASTE         XX          XX 
                         label = "NUMBER";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX &kp SQT &kp LBKT &kp RBKT XX XX                         KEQ &kp N7 &kp N8 &kp N9 &kp MINUS XX
+XX  &kp SQT       &kp LBKT       &kp RBKT        XX             XX            KEQ         &kp N7        &kp N8        &kp N9       &kp MINUS   XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &hml LCTRL XX &hml LALT LPAR &hml LGUI RPAR &hml LSHFT SPACE XX          MUL &hmr RSHFT N4 &hmr RGUI N5 &hmr RALT N6 &hmr LCTRL PLUS XX
+XX &hml LCTRL XX &hml LALT LPAR &hml LGUI RPAR &hml LSHFT SPACE XX            MUL      &hmr RSHFT N4 &hmr RGUI N5 &hmr RALT N6 &hmr LCTRL PLUS XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX &kp SEMI XX XX XX XX                                   DIV &kp N1 &kp N2 &kp N3 &kp RET XX
+XX  &kp SEMI          XX            XX           XX             XX            DIV         &kp N1        &kp N2        &kp N3        &kp RET    XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX           XX          XX            &kp KP_N0         &kp DOT      &kp COMMA
+                                    XX           XX             XX         &kp KP_N0      &kp DOT      &kp COMMA
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -164,11 +166,11 @@ XX &kp SEMI XX XX XX XX                                   DIV &kp N1 &kp N2 &kp 
                         label = "NAV";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX      XX            XX            XX            XX            XX             XX           KCUT         KCOPY          KPASTE        XX      XX
+XX      XX            XX            XX            XX            XX             XX           KCUT         KCOPY          KPASTE        XX       XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX  &hml LCTRL XX  &hml LALT XX &hml LGUI XX  &hml LSHFT XX     XX            XX          &kp HOME     &kp UP       &kp END       &kp PG_UP  XX
+XX  &hml LCTRL XX  &hml LALT XX &hml LGUI XX  &hml LSHFT XX     XX            XX          &kp HOME     &kp UP       &kp END       &kp PG_UP    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            XX            XX            XX            XX              XX         &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN XX
+XX      XX            XX            XX            XX            XX              XX         &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN    XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     XX            XX            XX            XX            XX            XX      
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
@@ -206,13 +208,13 @@ XX      XX            XX            XX            XX            XX              
                         label = "FUNCT";
                         bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-XX      XX            XX            XX            XX            XX             XX           &kp F7 &kp F8 &kp F9 &kp F10       XX
+XX      XX            XX            XX            XX            XX             XX           &kp F7       &kp F8        &kp F9       &kp F10    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            XX            XX            XX            XX             XX           &kp F4       &kp F5        &kp F6       &kp F11       XX
+XX      XX            XX            XX            XX            XX             XX           &kp F4       &kp F5        &kp F6       &kp F11    XX
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-XX      XX            XX            XX            XX            XX             XX           &kp F1      &kp F2         &kp F3       &kp F12       XX
+XX      XX            XX            XX            XX            XX             XX           &kp F1       &kp F2        &kp F3       &kp F12    XX
 //╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────-───────┴─────────────╯
-                                    XX           XX          XX                 XX           XX          XX         
+                                    XX           XX          XX                XX            XX          XX         
 //                            ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
